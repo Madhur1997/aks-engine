@@ -3,7 +3,7 @@ parameters:
   windowsServerVersion: ''
 
 jobs:
-- job: ${{ parameters.windowsServerVersion }}-${{ parameters.containerRuntime }}-build-vhd-windows
+- job: build_vhd_windows_${{ parameters.windowsServerVersion }}_${{ parameters.containerRuntime }}
   timeoutInMinutes: 150
   strategy:
     maxParallel: 0
